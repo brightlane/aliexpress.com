@@ -84,3 +84,60 @@ h1{font-size:28px;font-weight:700;color:#2c3e50;margin-bottom:10px;line-height:1
     <div class="price">$<strong>12.99</strong> <span class="original-price">$29.99</span></div>
     
     <a href="#buy" class="btn">🛒 Buy Now - Free Shipping</a>
+    <!-- Testimonials Section -->
+    <div style="margin:40px 0;background:#f8f9fa;padding:30px;border-radius:15px">
+      <h3 style="text-align:center;color:#2c3e50;margin-bottom:25px">⭐ 4.9/5 Stars (2,847 Reviews)</h3>
+      
+      <div style="display:flex;margin:15px 0;flex-wrap:wrap;justify-content:center;gap:15px">
+        <div style="background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08);max-width:220px;flex:1;min-width:200px">
+          <div style="color:#f39c12;font-size:18px;margin-bottom:10px">⭐⭐⭐⭐⭐</div>
+          <p style="color:#2c3e50;font-size:14px;line-height:1.5">"Perfect for my iPhone 16 Pro Max! Stays put during long FaceTime calls. Best $13 I ever spent!"</p>
+          <div style="font-weight:600;color:#27ae60;font-size:13px;margin-top:10px">– Sarah K., 1 week ago</div>
+        </div>
+        
+        <div style="background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08);max-width:220px;flex:1;min-width:200px">
+          <div style="color:#f39c12;font-size:18px;margin-bottom:10px">⭐⭐⭐⭐⭐</div>
+          <p style="color:#2c3e50;font-size:14px;line-height:1.5">"360° rotation is amazing for TikTok. Magnetic hold is super strong even with my thick case."</p>
+          <div style="font-weight:600;color:#27ae60;font-size:13px;margin-top:10px">– Mike D., 3 days ago</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div style="background:linear-gradient(45deg,#27ae60,#2ecc71);color:white;padding:30px;border-radius:15px;margin:30px 0">
+      <h2 style="margin-bottom:15px;font-size:24px">⏰ Only 47 Left In Stock!</h2>
+      <p style="margin-bottom:20px;font-size:16px">Don't miss this deal - prices going up soon!</p>
+      <a href="https://brightlane.github.io/aliexpress.com/magsafe-stand.html" class="btn" style="background:linear-gradient(45deg,#fff,#f8f9fa);color:#27ae60;font-size:22px;padding:20px 50px">🛒 SECURE YOURS NOW →</a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div style="background:#34495e;color:#bdc3c7;padding:25px;text-align:center;font-size:14px">
+    <p>✅ 30-Day Money Back Guarantee | ✅ Free Worldwide Shipping | ✅ Secure Checkout</p>
+    <p style="margin-top:10px">Made with ❤️ for iPhone lovers | Ships from Local Warehouse</p>
+  </div>
+</div>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Add pulse animation to main buy button
+  setInterval(() => {
+    const btn = document.querySelector('.btn');
+    btn.style.transform = 'scale(1.05)';
+    setTimeout(() => {
+      btn.style.transform = 'scale(1)';
+    }, 200);
+  }, 3000);
+</script>
+
+</body>
+</html>
