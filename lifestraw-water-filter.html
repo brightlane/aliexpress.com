@@ -10,4 +10,105 @@
         * {margin:0;padding:0;box-sizing:border-box;}
         body {font-family:Arial,sans-serif;background:linear-gradient(135deg,#00c9ff,#92fe9d);color:#2d3436;line-height:1.5;}
         .container {max-width:1200px;margin:0 auto;padding:20px;}
-        header {background:linear-gradient
+        header {background:linear-gradient(135deg,#667eea,#764ba2);text-align:center;padding:50px 20px;border-radius:25px;margin-bottom:40px;box-shadow:0 25px 50px rgba(102,126,234,0.4);}
+        h1 {font-size:3em;margin-bottom:15px;text-shadow:3px 3px 10px rgba(0,0,0,0.7);letter-spacing:2px;}
+        .price {font-size:4em;color:#fff;font-weight:900;text-shadow:4px 4px 15px rgba(0,0,0,0.8);animation:pure 2s infinite;}
+        @keyframes pure {0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
+        .highlight {background:linear-gradient(90deg,#a8e6cf,#88d8a3);padding:20px;border-radius:15px;margin:20px 0;font-size:1.3em;font-weight:bold;color:#2d3436;box-shadow:0 15px 40px rgba(168,230,207,0.4);}
+        .features {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:50px 0;}
+        .feature {background:rgba(255,255,255,0.9);padding:35px;border-radius:25px;text-align:center;border:3px solid rgba(255,255,255,0.5);transition:all 0.4s;color:#2d3436;}
+        .feature:hover {transform:translateY(-15px);box-shadow:0 25px 50px rgba(102,126,234,0.3);border-color:#667eea;}
+        .icon {font-size:5em;margin-bottom:25px;display:block;}
+        .buy-btn {display:block;width:100%;background:linear-gradient(45deg,#00b894,#00a085);color:white;font-size:2em;padding:30px;text-decoration:none;border-radius:60px;font-weight:900;text-transform:uppercase;letter-spacing:4px;box-shadow:0 20px 50px rgba(0,184,148,0.5);transition:all 0.4s;margin:50px 0;}
+        .buy-btn:hover {transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,184,148,0.7);}
+        .filter-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin:40px 0;background:rgba(255,255,255,0.3);padding:35px;border-radius:20px;}
+        .filter-item {text-align:center;padding:25px;background:white;border-radius:18px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+        .filter-item strong {display:block;font-size:2em;color:#667eea;}
+        footer {background:linear-gradient(135deg,#2d3436,#636e72);padding:50px;text-align:center;border-radius:25px;margin-top:50px;font-size:1.1em;color:#ddd;}
+        @media (max-width:768px) {h1{font-size:2.2em;}.price{font-size:3em;}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💧 LIFESTRAW WATER FILTER $35 💧</h1>
+            <div class="price">4000 LITERS CLEAN WATER - MYLAR BLANKET BUNDLE!</div>
+            <div class="highlight">
+                <strong>99.9999% Bacteria • 2oz Ultralight • Lifetime 4000L • Drink From Ponds/Lakes</strong>
+            </div>
+        </header>
+        
+        <section class="features">
+            <div class="feature">
+                <div class="icon">🦠</div>
+                <h3>99.9999% Bacteria Removal</h3>
+                <p>Filters e.coli, salmonella, cholera, giardia. 0.2 micron hollow fiber membrane.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">⚖️</div>
+                <h3>2oz (57g) Ultralight</h3>
+                <p>Pocket size 9" long. Lighter than candy bar. Fits mylar blanket pocket.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">♻️</div>
+                <h3>4000L Lifetime</h3>
+                <p>1 million gallons filtered. 4-8 years daily use. Replaceable cartridge available.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🌊</div>
+                <h3>Any Water Source</h3>
+                <p>Ponds, lakes, rivers, puddles. 1L/min flow rate. No pumping required.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🏔️</div>
+                <h3>Backpacking Proven</h3>
+                <p>Appalachian Trail, PCT thru-hiker standard. 10K+ mile tested durability.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🌡️</div>
+                <h3>-4°F to 122°F</h3>
+                <p>Frozen streams to hot springs. Full global temperature range operation.</p>
+            </div>
+        </section>
+
+        <div class="filter-grid">
+            <div class="filter-item">
+                <strong>4000 Liters</strong>
+                <small>Lifetime capacity</small>
+            </div>
+            <div class="filter-item">
+                <strong>2oz</strong>
+                <small>Total weight</small>
+            </div>
+            <div class="filter-item">
+                <strong>99.9999%</strong>
+                <small>Bacteria removal</small>
+            </div>
+            <div class="filter-item">
+                <strong>1L/min</strong>
+                <small>Flow rate</small>
+            </div>
+            <div class="filter-item">
+                <strong>0.2 Micron</strong>
+                <small>Filter size</small>
+            </div>
+            <div class="filter-item">
+                <strong>4-8 Years</strong>
+                <small>Daily use</small>
+            </div>
+        </div>
+        
+        <a href="https://s.click.aliexpress.com/e/_dZ4bG5J" class="buy-btn" rel="nofollow noopener" target="_blank">
+            💧 BUY LIFESTRAW $35 ➤ FULL SURVIVAL WATER BUNDLE
+        </a>
+        
+        <p style="text-align:center;margin:50px 0;color:#667eea;font-size:1.4em;font-weight:bold;">
+            🚚 FREE Shipping • 4000L Lifetime • 2oz Ultralight • Drink From Any Source
+        </p>
+        
+        <footer>
+            <p>© 2026 SurvivalTechEmpire.com | Water Purification Division | <strong>Page 53 Deployed - Volume Revenue Stack #9</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
