@@ -184,3 +184,101 @@ h1{font-size:28px;font-weight:700;color:#2c3e50;margin-bottom:10px;line-height:1
       <p style="font-size:18px;margin-bottom:25px;font-weight:500">Price increasing in <span id="countdown">14:32</span></p>
       <a href="https://brightlane.github.io/aliexpress.com/magsafe-stand.html" class="btn" style="background:white;color:#ff6b6b;font-size:24px;font-weight:800;padding:22px 60px;box-shadow:0 15px 35px rgba(255,255,255,0.3)">🛒 CLAIM YOURS NOW →</a>
     </div>
+    <!-- Trust Signals Footer -->
+    <div style="background:#2c3e50;color:#ecf0f1;padding:30px;border-radius:15px;margin:30px 10px;text-align:center">
+      <h3 style="color:#3498db;margin-bottom:20px;font-size:22px">✅ Why 2,847+ Customers Love This Stand</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:800px;margin:0 auto;font-size:15px">
+        <div>🧲 <strong>Works with Thick Cases</strong><br>Strong N52 magnets hold securely</div>
+        <div>🔄 <strong>360° Rotation</strong><br>Portrait + landscape + every angle</div>
+        <div>🪨 <strong>No-Slip Base</strong><br>Weighted rubber - stays put always</div>
+        <div>⚡ <strong>Instant Setup</strong><br>MagSafe snap-on - no adjustments</div>
+      </div>
+    </div>
+
+    <!-- Final Massive CTA -->
+    <div style="background:linear-gradient(135deg,#8e44ad,#9b59b6);color:white;padding:40px;border-radius:25px;margin:30px 0;text-align:center;position:relative">
+      <div style="font-size:48px;margin-bottom:15px;animation:pulse 2s infinite">🎯</div>
+      <h2 style="font-size:32px;font-weight:800;margin-bottom:15px">Ready to Upgrade Your iPhone Experience?</h2>
+      <p style="font-size:20px;margin-bottom:30px;font-weight:500">Join 2,847+ satisfied customers - limited stock at this price!</p>
+      <a href="https://brightlane.github.io/aliexpress.com/magsafe-stand.html" class="btn" style="background:linear-gradient(45deg,#f39c12,#e67e22);color:white;font-size:26px;font-weight:800;padding:25px 70px;box-shadow:0 20px 40px rgba(243,156,18,0.4)">🚀 YES - SEND ME ONE NOW!</a>
+      <div style="margin-top:20px;font-size:16px">
+        <span style="color:#ffd700">⭐⭐⭐⭐⭐</span> Trusted by iPhone users worldwide
+      </div>
+    </div>
+  </div>
+  
+  <!-- Professional Footer -->
+  <footer style="background:#1a252f;color:#7f8c8d;padding:30px 20px;text-align:center;font-size:14px;border-top:4px solid #3498db">
+    <div style="max-width:500px;margin:0 auto;line-height:1.6">
+      <p><strong>✅ 30-Day No Questions Asked Guarantee</strong><br>✅ Free Worldwide Shipping (1-2 weeks)<br>✅ Secure Checkout - SSL Protected</p>
+      <p style="margin-top:15px;border-top:1px solid #34495e;padding-top:15px;font-size:13px">
+        Made with ❤️ for iPhone lovers | Ships from US/EU Warehouses | 
+        <a href="#privacy" style="color:#3498db">Privacy Policy</a> | 
+        <a href="#terms" style="color:#3498db">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+</div>
+
+<!-- Enhanced JavaScript -->
+<script>
+  // 1. Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(anchor.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+    });
+  });
+
+  // 2. Countdown timer (resets daily)
+  function updateCountdown() {
+    const now = new Date();
+    const tomorrow = new Date(now.getTime() + 24*60*60*1000);
+    tomorrow.setHours(0,0,0,0);
+    const diff = tomorrow - now;
+    const hours = Math.floor(diff / (1000*60*60));
+    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    document.getElementById('countdown').textContent = `${hours.toString().padStart(2,'0')}:${mins.toString().padStart(2,'0')}`;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+
+  // 3. Button pulse animations
+  const buttons = document.querySelectorAll('.btn');
+  buttons.forEach((btn, i) => {
+    setInterval(() => {
+      btn.animate([
+        { transform: 'scale(1)', boxShadow: '0 10px 25px rgba(0,0,0,0.2)' },
+        { transform: 'scale(1.05)', boxShadow: '0 15px 35px rgba(0,0,0,0.3)' },
+        { transform: 'scale(1)', boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }
+      ], { duration: 800, iterations: 1 });
+    }, (i+1)*2500);
+  });
+
+  // 4. Shimmer animation CSS
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+  `;
+  document.head.appendChild(style);
+
+  // 5. Intersection Observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  });
+  document.querySelectorAll('.feature-row, .testimonial').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.6s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
