@@ -1,0 +1,31 @@
+<!DOCTYPE
+    <!-- Testimonials + Final CTA -->
+    <section>
+      <h2>What Teams Say</h2>
+      <div class="testimonial">"Perfect for emergency kits. Pairs with our project management software." – Sarah, PM</div>
+    </section>
+
+    <div style="text-align:center;padding:2rem;background:var(--clr-accent);color:white;">
+      <h2>Ready for Clean Water?</h2>
+      <a href="https://www.awin1.com/cread.php?awinmid=6378&awinaffid=1166692&ued=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D7M7IEmQnY%26af%3D%21%21%21id%21%21%21%26dp%3D%21%21%21awc%21%21%21%26cn%3D6378%26Afref%3D%21%21%21sitename%21%21%21%26sv1%3Daffiliate%26sv_campaign_id%3D%21%21%21id%21%21%21%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fw%252Fwholesale-portable-water-filter.html" class="btn" target="_blank" rel="sponsored" style="font-size:1.25rem;padding:1rem 2rem;">GET YOURS NOW →</a>
+    </div>
+
+    <!-- Daily Tip -->
+    <section style="background:var(--clr-accent);color:white;padding:1rem;text-align:center;">
+      <p id="daily-tip">Today's tip: Add water purification to your project planning templates.</p>
+    </section>
+
+  </div>
+
+  <script>
+    // Language switch + daily tip rotation
+    const lang=navigator.language.substring(0,2);
+    if(['es','fr','de','it','pt','zh','ru','ar','ja'].includes(lang)){
+      document.querySelectorAll('[data-tr="'+lang+'"]').forEach(el=>el.style.display='block');
+      document.querySelectorAll('[data-tr="en"]').forEach(el=>el.style.display='none');
+    }
+    const d=new Date();document.getElementById('daily-tip').textContent="Tip #"+(d.getDate()%7+1)+": Test emergency gear with team collaboration tools.";
+  </script>
+
+</body>
+</html>
