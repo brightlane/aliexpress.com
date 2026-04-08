@@ -1,114 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patek Philippe Nautilus 5711 $150K - Steel Sports Holy Grail</title>
-    <meta name="description" content="Patek Philippe Nautilus 5711/1A $150K - Discontinued steel icon. 1200% retail premium. The watch collectors lose sleep over.">
-    <meta name="keywords" content="patek philippe nautilus 5711, patek 5711/1a, steel sports watch, 150000 dollar watch, investment luxury watch">
-    <style>
-        * {margin:0;padding:0;box-sizing:border-box;}
-        body {font-family:'Helvetica Neue',sans-serif;background:linear-gradient(135deg,#0a0a0a,#1a1a1a);color:#e0e0e0;line-height:1.7;}
-        .container {max-width:1200px;margin:0 auto;padding:25px;}
-        header {background:radial-gradient(circle,#b0c4de,#4682b4);text-align:center;padding:90px 40px;border-radius:45px;margin-bottom:80px;box-shadow:0 50px 100px rgba(176,196,222,0.3);}
-        h1 {font-size:4.2em;margin-bottom:40px;text-shadow:5px 5px 20px rgba(0,0,0,0.8);letter-spacing:6px;font-weight:900;}
-        .price {font-size:7em;color:#fff;font-weight:900;text-shadow:8px 8px 25px rgba(0,0,0,0.9);animation:nautilus 3s infinite;}
-        @keyframes nautilus {0%,100%{transform:scale(1);text-shadow:8px 8px 25px rgba(0,0,0,0.9);}50%{transform:scale(1.03);text-shadow:8px 8px 35px rgba(255,255,255,0.4),0 0 50px rgba(176,196,222,0.3);}}
-        .patek-status {background:rgba(0,0,0,0.85);backdrop-filter:blur(30px);padding:50px;border-radius:40px;margin:50px 0;font-size:1.8em;font-weight:700;border:6px solid #b0c4de;box-shadow:0 40px 90px rgba(0,0,0,0.8);}
-        .features {display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:50px;margin:90px 0;}
-        .feature {background:rgba(255,255,255,0.03);backdrop-filter:blur(20px);padding:60px;border-radius:40px;text-align:center;border:3px solid rgba(176,196,222,0.3);transition:all 0.7s;box-shadow:0 30px 70px rgba(0,0,0,0.6);}
-        .feature:hover {transform:translateY(-35px) rotateX(5deg);border-color:#b0c4de;box-shadow:0 60px 120px rgba(176,196,222,0.4);}
-        .icon {font-size:8em;margin-bottom:45px;display:block;}
-        .buy-btn {display:block;width:100%;background:linear-gradient(45deg,#4682b4,#b0c4de);color:#fff;font-size:3em;padding:50px;text-decoration:none;border-radius:90px;font-weight:900;text-transform:uppercase;letter-spacing:8px;box-shadow:0 40px 90px rgba(70,130,180,0.7);transition:all 0.7s;margin:90px 0;border:8px solid #fff;}
-        .buy-btn:hover {transform:translateY(-20px) scale(1.04);box-shadow:0 80px 160px rgba(70,130,180,0.9);}
-        .grail-metrics {display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:40px;margin:80px 0;background:rgba(0,0,0,0.7);padding:70px;border-radius:40px;}
-        .metric {text-align:center;padding:45px;border-radius:35px;background:rgba(255,255,255,0.02);border:4px solid rgba(176,196,222,0.2);}
-        .metric strong {display:block;font-size:4em;color:#b0c4de;}
-        footer {background:linear-gradient(135deg,#000,#111);color:#b0c4de;padding:80px;text-align:center;border-radius:45px;margin-top:90px;font-size:1.5em;border-top:6px solid #4682b4;}
-        @media (max-width:768px) {h1{font-size:3.3em;}.price{font-size:5em;}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patek Philippe Nautilus 5711</title>
+<meta name="description" content="Patek Philippe Nautilus 5711 $119,000 - Luxury Swiss watch, iconic design, high precision.">
+<meta name="keywords" content="Patek Philippe, Nautilus 5711, luxury watch, Swiss watch">
+
+<style>/* same styles as previous pages */</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>⚓ PATEK PHILIPPE NAUTILUS 5711 $150,000 ⚓</h1>
-            <div class="price">5711/1A STEEL - GRAIL STATUS</div>
-            <div class="patek-status">
-                <strong>Discontinued 2021 • 1200% Retail Premium • 40mm Steel • The Watch World Lost Its Mind Over</strong>
-            </div>
-        </header>
-        
-        <section class="features">
-            <div class="feature">
-                <div class="icon">👑</div>
-                <h3>Grail of Watchmaking</h3>
-                <p>Retail $35K → $150K street. Bigger premium than Bitcoin 2017. Collectors mortgage houses for this.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">⚙️</div>
-                <h3>Caliber 324 S C</h3>
-                <p>Self-winding 21k gold rotor. 45hr power reserve. Patek's most reliable sports movement ever.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🏗️</div>
-                <h3>Riveted Engineering</h3>
-                <p>Porthole construction. 200+ hand-rivets. Waterproof 120m. Built like nuclear submarine.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">📈</div>
-                <h3>Insane Appreciation</h3>
-                <p>10x retail in 5 years. Liquid asset outperforms S&P 500, gold, real estate combined.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🔮</div>
-                <h3>Integrated Bracelet</h3>
-                <p>Genta's 1976 masterpiece. Nautilus = original steel sports luxury. AP/RoLex copied it.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">∞</div>
-                <h3>Heirloom Certified</h3>
-                <p>"You never actually own a Patek, you merely look after it for next generations." - Official motto.</p>
-            </div>
-        </section>
+<div class="container">
 
-        <div class="grail-metrics">
-            <div class="metric">
-                <strong>$150K</strong>
-                <small>Current market</small>
-            </div>
-            <div class="metric">
-                <strong>$35K</strong>
-                <small>Original retail</small>
-            </div>
-            <div class="metric">
-                <strong>1200%</strong>
-                <small>Premium multiplier</small>
-            </div>
-            <div class="metric">
-                <strong>Ref 5711/1A</strong>
-                <small>Steel holy grail</small>
-            </div>
-            <div class="metric">
-                <strong>2021</strong>
-                <small>Production ended</small>
-            </div>
-            <div class="metric">
-                <strong>120m</strong>
-                <small>Water resistance</small>
-            </div>
-        </div>
-        
-        <a href="https://s.click.aliexpress.com/e/_dP2sWxY" class="buy-btn" rel="nofollow noopener" target="_blank">
-            ⚓ SECURE PATEK NAUTILUS 5711 $150K ➤ FULL SET AUTHENTICATED
-        </a>
-        
-        <p style="text-align:center;margin:90px 0;color:#b0c4de;font-size:2em;font-weight:900;">
-            ✈️ Worldwide Vault Shipping • Patek Service Papers • Original Box/Guarantee • Museum Quality
-        </p>
-        
-        <footer>
-            <p>© 2026 SurvivalTechEmpire.com x Patek Division | <strong>Page 43 Deployed - Nautilus Empire Conquered</strong></p>
-        </footer>
-    </div>
+<section class="hero">
+  <h1>⌚ Patek Philippe Nautilus 5711</h1>
+  <p>Luxury Swiss watch with iconic design and high precision. Perfect for collectors and style connoisseurs.</p>
+  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">⌚ Buy Now $119,000</a>
+</section>
+
+<div class="nav-links">
+  <a href="nasa-mylar-blanket.html">← Previous</a>
+  <a href="poco-f7-phone.html">Next →</a>
+</div>
+
+</div>
 </body>
 </html>
