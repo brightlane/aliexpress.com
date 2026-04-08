@@ -3,26 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Full Shop</title>
-<meta name="description" content="Shop all top products including power banks, survival gear, electronics, and more.">
-<meta name="keywords" content="online shop, power banks, survival gear, electronics, accessories">
-
-<style>/* same styles as previous pages */</style>
+<title>Brightlane Shop – Explore All Products</title>
+<meta name="description" content="Browse all Brightlane products including survival gear, electronics, and more. Grab your essentials today!">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-list {text-align:left;max-width:700px;margin:0 auto;line-height:1.8;}
+.product-list li a {color:#ff851b;text-decoration:none;}
+.product-list li a:hover {text-decoration:underline;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+</style>
 </head>
 <body>
 <div class="container">
+  <h1>Brightlane Shop</h1>
+  <p>Explore all our products including survival gear, electronics, and home essentials. Click to view or buy.</p>
 
-<section class="hero">
-  <h1>🛒 Full Shop</h1>
-  <p>Explore our full range of top-quality products: portable chargers, survival gear, electronics, and more. Free worldwide shipping!</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">🛒 Shop Now</a>
-</section>
+  <ul class="product-list">
+    <li><a href="1000lumen-led-lantern.html">1000 Lumen LED Lantern</a></li>
+    <li><a href="100w.-solar-panel-.html">100W Solar Panel</a></li>
+    <li><a href="120db-survival-whistle.html">120dB Survival Whistle</a></li>
+    <li><a href="201-water-bladder.html">201 Water Bladder</a></li>
+    <li><a href="5501-paranoid-bracelet.html">5501 Paranoid Bracelet</a></li>
+    <li><a href="Emergency-Mylar-Survival-Blanket.html">Emergency Mylar Survival Blanket</a></li>
+    <li><a href="LifeStream-Portable-Water-Filter.html">LifeStream Portable Water Filter</a></li>
+    <li><a href="MagSafeHub.html">MagSafe Hub</a></li>
+    <li><a href="Portable-Power-Banks.html">Portable Power Banks</a></li>
+    <li><a href="StormReadyHub.html">StormReady Hub</a></li>
+    <li><a href="aliexpress-shop.html">Aliexpress Shop</a></li>
+    <li><a href="anker-powerhouse-521.html">Anker Powerhouse 521</a></li>
+    <li><a href="aquacurve-irrigation.html">Aquacurve Irrigation</a></li>
+    <li><a href="cat-nail-scratch-board-.html">Cat Nail Scratch Board</a></li>
+    <li><a href="chargingstation.html">Charging Station</a></li>
+    <li><a href="chuwi-corebook-x.html">Chuwi Corebook X</a></li>
+    <li><a href="electrick-bike.html">Electrick Bike</a></li>
+    <li><a href="elite-72hr-survival-kit.html">Elite 72hr Survival Kit</a></li>
+    <li><a href="emergency-cooking-stove.html">Emergency Cooking Stove</a></li>
+    <li><a href="emergency-hot-tub.html">Emergency Hot Tub</a></li>
+    <li><a href="emergency-lantern.html">Emergency Lantern</a></li>
+    <li><a href="emergency-light.html">Emergency Light</a></li>
+    <li><a href="emergency-water-generator.html">Emergency Water Generator</a></li>
+    <li><a href="emergencyfoodkit.html">Emergency Food Kit</a></li>
+    <li><a href="ferro-rod-firestarter.html">Ferro Rod Firestarter</a></li>
+    <li><a href="flexrelief-fascia-ring.html">FlexRelief Fascia Ring</a></li>
+    <li><a href="gan.html">Gan</a></li>
+    <li><a href="god-pocket-laptop.html">God Pocket Laptop</a></li>
+    <li><a href="hermes-picotin-lock.html">Hermes Picotin Lock</a></li>
+    <li><a href="jackery-explorer-300.html">Jackery Explorer 300</a></li>
+    <li><a href="jerry-can-lifesaver.html">Jerry Can Lifesaver</a></li>
+  </ul>
 
-<div class="nav-links">
-  <a href="satellite-phone.html">← Previous</a>
-  <a href="signal-mirror.html">Next →</a>
+  <a href="https://tidd.ly/4slUGYv" target="_blank" class="button">Shop All Products →</a>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without checking our full shop – limited stock!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv','_blank');setCookie('aff','https://tidd.ly/4slUGYv',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => { document.getElementById('exitPopup').style.display='block'; }, 1500);
+  }
+});
+
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
