@@ -3,26 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MLLSE Mini PC</title>
-<meta name="description" content="MLLSE Mini PC $349 - Ultra-compact desktop PC for home, office, and entertainment use.">
-<meta name="keywords" content="MLLSE mini PC, compact desktop PC, home PC, small form factor computer">
-
-<style>/* same styles as previous pages */</style>
+<title>MLLSE Mini PC – Compact & Powerful</title>
+<meta name="description" content="MLLSE Mini PC: Small yet powerful computing solution for home, office, or entertainment.">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-image {max-width:400px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.product-image img {width:100%;height:auto;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+.related-products {margin-top:40px;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;}
+.related-products h2 {text-align:center;color:#ffd700;}
+.related-products ul {list-style:none;padding:0;line-height:1.8;}
+.related-products li a {color:#ff851b;text-decoration:none;}
+.related-products li a:hover {text-decoration:underline;}
+</style>
 </head>
 <body>
 <div class="container">
+  <h1>MLLSE Mini PC</h1>
+  <p>Compact, high-performance mini PC for work, gaming, or media streaming.</p>
+  
+  <a href="https://tidd.ly/4slUGYv?product=mllse-mini-pc" target="_blank" class="product-image">
+    <img src="https://example.com/mllse-mini-pc.jpg" alt="MLLSE Mini PC">
+  </a>
+  
+  <div>
+    <a href="https://tidd.ly/4slUGYv?product=mllse-mini-pc" target="_blank" class="button">Shop Now →</a>
+  </div>
+  
+  <h2>Key Features</h2>
+  <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:1.6;">
+    <li>💻 High-performance CPU and GPU</li>
+    <li>⚡ Compact design for small spaces</li>
+    <li>🔌 Multiple ports for all devices</li>
+    <li>🎮 Suitable for gaming, work, and media</li>
+  </ul>
 
-<section class="hero">
-  <h1>💻 MLLSE Mini PC</h1>
-  <p>Ultra-compact desktop PC for home, office, or entertainment. Powerful performance in a tiny package.</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">💻 Buy Now $349</a>
-</section>
-
-<div class="nav-links">
-  <a href="mini-multitool.html">← Previous</a>
-  <a href="mylar-blanket.html">Next →</a>
+  <div class="related-products">
+    <h2>Other Popular Products</h2>
+    <ul>
+      <li><a href="massage-chair.html">Massage Chair</a></li>
+      <li><a href="mini-multitool.html">Mini Multitool</a></li>
+      <li><a href="magasafe.html">MagSafe Accessories</a></li>
+      <li><a href="lv-neverfull-mm.html">LV Neverfull MM</a></li>
+      <li><a href="loropiana-shyanne-dress.html">Loro Piana Shyanne Dress</a></li>
+    </ul>
+  </div>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without grabbing the MLLSE Mini PC – limited stock!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv?product=mllse-mini-pc','_blank');setCookie('aff','https://tidd.ly/4slUGYv?product=mllse-mini-pc',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => { document.getElementById('exitPopup').style.display='block'; }, 1500);
+  }
+});
+
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
