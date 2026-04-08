@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Water Solutions</title>
-  <style>
-    :root {--clr-accent:#00cec9;}
-    body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.5;}
-    section {padding:2rem;text-align:center;}
-    .testimonial {background:#f1f1f1;color:#333;margin:1rem auto;padding:1rem;border-radius:10px;max-width:600px;font-style:italic;}
-    .btn {display:inline-block;background:#d63031;color:white;text-decoration:none;border-radius:50px;transition:all 0.3s;}
-    .btn:hover {transform:translateY(-5px);box-shadow:0 5px 20px rgba(0,0,0,0.2);}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LifeStream Portable Water Filter</title>
+<meta name="description" content="Portable water filter for camping, hiking, and emergencies. Removes bacteria and impurities.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="hero">
+  <h1>💧 LifeStream Portable Water Filter</h1>
+  <p>Filter up to 1,000 liters of water. Compact, lightweight, and reliable.</p>
+  <div class="price">$39.99</div>
+</div>
 
-  <!-- Testimonials -->
-  <section>
-    <h2>What Teams Say</h2>
-    <div class="testimonial">"Perfect for emergency kits. Pairs with our project management software." – Sarah, PM</div>
-  </section>
+<section class="features">
+  <h2>Features</h2>
+  <ul>
+    <li>Removes 99.99% bacteria and protozoa</li>
+    <li>Filters up to 1,000 liters of water</li>
+    <li>Lightweight and portable for camping or emergencies</li>
+  </ul>
+</section>
 
-  <!-- Final CTA -->
-  <div style="text-align:center;padding:2rem;background:var(--clr-accent);color:white;">
-    <h2>Ready for Clean Water?</h2>
-    <a href="https://www.awin1.com/cread.php?awinmid=6378&awinaffid=1166692&ued=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D7M7IEmQnY%26af%3D%21%21%21id%21%21%21%26dp%3D%21%21%21awc%21%21%21%26cn%3D6378%26Afref%3D%21%21%21sitename%21%21%21%26sv1%3Daffiliate%26sv_campaign_id%3D%21%21%21id%21%21%21%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fw%252Fwholesale-portable-water-filter.html" 
-       class="btn" target="_blank" rel="sponsored" 
-       style="font-size:1.25rem;padding:1rem 2rem;">
-      GET YOURS NOW →
-    </a>
-  </div>
+<section class="cta">
+  <a href="https://tidd.ly/4slUGYv?product=portable-water-filter" target="_blank" rel="nofollow noopener" class="buy-btn">
+    💰 Buy Now
+  </a>
+</section>
 
-  <!-- Daily Tip -->
-  <section style="background:var(--clr-accent);color:white;">
-    <p id="daily-tip">Today's tip: Add water purification to your project planning templates.</p>
-  </section>
+<section class="next-product">
+  <a href="MagSafeHub.html" class="next-btn">➤ Next: MagSafeHub Accessories</a>
+</section>
 
-  <script>
-    // Language switch
-    const lang = navigator.language.substring(0,2);
-    if(['es','fr','de','it','pt','zh','ru','ar','ja'].includes(lang)){
-      document.querySelectorAll('[data-tr="'+lang+'"]').forEach(el=>el.style.display='block');
-      document.querySelectorAll('[data-tr="en"]').forEach(el=>el.style.display='none');
-    }
-
-    // Daily tip rotation
-    const d = new Date();
-    document.getElementById('daily-tip').textContent = 
-      "Tip #" + (d.getDate()%7+1) + ": Test emergency gear with team collaboration tools.";
-  </script>
-
+<footer>
+  <p>© 2026 YourBrand | Free Shipping • 30-Day Guarantee</p>
+</footer>
 </body>
 </html>
