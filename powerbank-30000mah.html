@@ -3,26 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PowerBank 30000mAh</title>
-<meta name="description" content="PowerBank 30000mAh $49.99 - High-capacity portable charger for smartphones, tablets, and more.">
-<meta name="keywords" content="power bank, 30000mAh, portable charger, mobile power">
-
-<style>/* same styles as previous pages */</style>
+<title>PowerBank 30000mAh – Ultra High Capacity</title>
+<meta name="description" content="PowerBank 30000mAh – reliable, high-capacity portable charger for all your devices. Never run out of power again!">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-image {max-width:400px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.product-image img {width:100%;height:auto;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+.related-products {margin-top:40px;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;}
+.related-products h2 {text-align:center;color:#ffd700;}
+.related-products ul {list-style:none;padding:0;line-height:1.8;}
+.related-products li a {color:#ff851b;text-decoration:none;}
+.related-products li a:hover {text-decoration:underline;}
+</style>
 </head>
 <body>
 <div class="container">
+  <h1>PowerBank 30000mAh</h1>
+  <p>Ultra high-capacity portable charger. Perfect for travel, emergencies, or heavy device users.</p>
+  
+  <a href="https://tidd.ly/4slUGYv?product=powerbank-30000mah" target="_blank" class="product-image">
+    <img src="https://example.com/powerbank-30000mah.jpg" alt="PowerBank 30000mAh">
+  </a>
+  
+  <div>
+    <a href="https://tidd.ly/4slUGYv?product=powerbank-30000mah" target="_blank" class="button">Buy Now →</a>
+  </div>
+  
+  <h2>Key Features</h2>
+  <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:1.6;">
+    <li>🔋 Massive 30,000mAh capacity</li>
+    <li>⚡ Fast charging for multiple devices</li>
+    <li>💼 Compact and portable design</li>
+    <li>🌎 Ideal for travel, work, or emergencies</li>
+    <li>🌟 Durable and highly rated by users</li>
+  </ul>
 
-<section class="hero">
-  <h1>🔋 PowerBank 30000mAh</h1>
-  <p>High-capacity portable charger for smartphones, tablets, and more. Keep your devices powered anywhere.</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">🔋 Buy Now $49.99</a>
-</section>
-
-<div class="nav-links">
-  <a href="posturepro-corrector.html">← Previous</a>
-  <a href="ptz-security-camera.html">Next →</a>
+  <div class="related-products">
+    <h2>Other Popular Products</h2>
+    <ul>
+      <li><a href="ptz-security-camera.html">PTZ Security Camera</a></li>
+      <li><a href="solar-generator-kit.html">Solar Generator Kit</a></li>
+      <li><a href="survival-kit.html">Survival Kit</a></li>
+      <li><a href="tank-4-pro-phone.html">Tank 4 Pro Phone</a></li>
+      <li><a href="wireless-dog-fence.html">Wireless Dog Fence</a></li>
+    </ul>
+  </div>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without your PowerBank – limited stock!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv?product=powerbank-30000mah','_blank');setCookie('aff','https://tidd.ly/4slUGYv?product=powerbank-30000mah',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => { document.getElementById('exitPopup').style.display='block'; }, 1500);
+  }
+});
+
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
