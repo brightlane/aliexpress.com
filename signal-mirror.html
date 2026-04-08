@@ -3,26 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Signal Mirror</title>
-<meta name="description" content="Signal Mirror $9.99 - Compact emergency signaling mirror for outdoor survival and safety.">
-<meta name="keywords" content="signal mirror, emergency signaling, survival gear, outdoor safety">
-
-<style>/* same styles as previous pages */</style>
+<title>Signal Mirror – Essential Survival Tool</title>
+<meta name="description" content="High-quality signal mirror for emergency situations. Lightweight, compact, and perfect for outdoor adventures.">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-image {max-width:400px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.product-image img {width:100%;height:auto;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+</style>
 </head>
 <body>
 <div class="container">
-
-<section class="hero">
-  <h1>🪞 Signal Mirror</h1>
-  <p>Compact emergency signaling mirror. Essential for outdoor survival and emergency situations. Lightweight and easy to carry.</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">🪞 Buy Now $9.99</a>
-</section>
-
-<div class="nav-links">
-  <a href="shop.html">← Previous</a>
-  <a href="solar-generator-kit.html">Next →</a>
+  <h1><a href="https://tidd.ly/4slUGYv?product=signal-mirror" target="_blank">Signal Mirror</a></h1>
+  <p>Lightweight, compact, and essential for outdoor survival and emergency signaling. Don’t leave home without it!</p>
+  
+  <a href="https://tidd.ly/4slUGYv?product=signal-mirror" target="_blank" class="product-image">
+    <img src="https://example.com/images/signal-mirror.jpg" alt="Signal Mirror">
+  </a>
+  
+  <div>
+    <a href="https://tidd.ly/4slUGYv?product=signal-mirror" target="_blank" class="button">Get Yours Now →</a>
+  </div>
+  
+  <h2>Why You Need a Signal Mirror</h2>
+  <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:1.6;">
+    <li>🔆 Reflective surface for emergency signaling</li>
+    <li>🏕️ Compact and easy to carry in a survival kit</li>
+    <li>💪 Durable and weather-resistant</li>
+    <li>🌍 Trusted by hikers and outdoor enthusiasts worldwide</li>
+  </ul>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without your Signal Mirror – limited stock!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv?product=signal-mirror','_blank');setCookie('aff','https://tidd.ly/4slUGYv?product=signal-mirror',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => { document.getElementById('exitPopup').style.display='block'; }, 1500);
+  }
+});
+
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
