@@ -1,81 +1,200 @@
-<!-- EXIT POPUP -->
-<div id="exit-popup" style="display:none;">
-    <p>⚡ Wait! Only <strong id="stock-count">3</strong> lanterns left!</p>
-    <p>Grab your <strong>1000 Lumen Lantern</strong> before it’s gone!</p>
-    <button id="buy-now-btn">Get It Now</button>
-    <p id="countdown-text">Offer expires in <span id="countdown">10</span> seconds!</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1000 Lumen LED Lantern – Survival Essential</title>
+<meta name="description" content="Bright, portable, waterproof 1000-lumen LED lantern. Perfect for camping, emergencies, and survival kits. Grab yours now!">
+<meta name="keywords" content="LED lantern, survival lantern, camping light, emergency light, 1000 lumens">
+
+<!-- Affiliate URL -->
+<script>
+const AFFILIATE_URL = "https://tidd.ly/4slUGYv";
+</script>
 
 <style>
-#exit-popup {
-    position: fixed;
-    bottom: -400px; /* start hidden below screen */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 350px;
-    max-width: 90%;
-    background: #ff6b6b;
-    color: #fff;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    text-align: center;
-    font-size: 18px;
-    z-index: 9999;
-    transition: bottom 0.8s ease;
+body {
+    margin:0;
+    font-family:system-ui,-apple-system,sans-serif;
+    background:#0d1b2a;
+    color:#fff;
+    line-height:1.5;
 }
-#exit-popup button {
-    margin-top: 15px;
-    padding: 12px 30px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50px;
-    background: #fff;
-    color: #ff6b6b;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
+
+.container {
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+    text-align:center;
 }
-#exit-popup button:hover {
-    background: #ffe0e0;
+
+h1 {
+    font-size:3rem;
+    margin-bottom:0.5rem;
+    color:#ffd700;
+    cursor:pointer;
+}
+
+h1:hover {text-decoration:underline;}
+
+.hero-image img {
+    width:100%;
+    max-width:400px;
+    border-radius:15px;
+    cursor:pointer;
+    transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.pre-sell {
+    font-size:1.2rem;
+    margin:20px 0;
+    color:#ddd;
+}
+
+.cta-button {
+    display:inline-block;
+    background:#ff6b6b;
+    color:#fff;
+    padding:15px 30px;
+    font-size:1.5rem;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    margin-top:20px;
+    box-shadow:0 5px 20px rgba(255,107,107,0.4);
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(255,107,107,0.5);
+}
+
+.specs {
+    background:#112240;
+    border-radius:15px;
+    padding:20px;
+    margin:30px 0;
+    text-align:left;
+}
+
+.specs h2 {color:#ffd700;}
+
+.specs ul {
+    list-style: none;
+    padding:0;
+}
+
+.specs li {
+    margin-bottom:10px;
+}
+
+.reviews {
+    background:#112240;
+    border-radius:15px;
+    padding:20px;
+    margin:30px 0;
+}
+
+.review {
+    margin-bottom:15px;
+    border-bottom:1px solid #1a2a40;
+    padding-bottom:10px;
+}
+
+.review strong {color:#ffd700;}
+
+.exit-popup {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ff6b6b;
+    color:#fff;
+    padding:20px;
+    border-radius:15px;
+    display:none;
+    max-width:300px;
+    z-index:9999;
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+.exit-popup a {
+    display:inline-block;
+    margin-top:10px;
+    background:#ffd700;
+    color:#000;
+    padding:10px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
 }
 </style>
+</head>
+<body>
+<div class="container">
+
+<!-- Hero Section -->
+<h1 onclick="window.location.href=AFFILIATE_URL">💡 1000 Lumen LED Lantern</h1>
+<div class="hero-image" onclick="window.location.href=AFFILIATE_URL">
+    <img src="https://ae01.alicdn.com/kf/SMAGSAFEIMAGE.jpg" alt="1000 Lumen LED Lantern">
+</div>
+
+<p class="pre-sell">
+Never be left in the dark again! This 1000-lumen lantern is **bright, compact, and waterproof**, perfect for camping, hiking, and emergency survival kits. Battery-powered and ready whenever you are. Don’t just have a light — have a **lifesaver in your hand**.
+</p>
+
+<a href="#" class="cta-button" onclick="window.location.href=AFFILIATE_URL">Grab Yours Now →</a>
+
+<!-- Specs -->
+<div class="specs">
+<h2>Key Features:</h2>
+<ul>
+<li>💡 Ultra-bright 1000 lumens LED light</li>
+<li>💧 Waterproof & durable for outdoor use</li>
+<li>🔋 Battery operated — easy replacement and reliable</li>
+<li>🪶 Lightweight & portable — fits in your backpack</li>
+<li>🏕️ Perfect for camping, hiking, emergencies, or home use</li>
+</ul>
+</div>
+
+<!-- Reviews -->
+<div class="reviews">
+<h2>Customer Reviews</h2>
+
+<div class="review">
+<strong>AliExpress Shopper:</strong> "Small but incredibly bright. Perfect for emergency kits." ⭐⭐⭐⭐⭐
+</div>
+<div class="review">
+<strong>S***s:</strong> "Very handy, battery operated, and durable. Recommended!" ⭐⭐⭐⭐⭐
+</div>
+<div class="review">
+<strong>A***r:</strong> "Compact design, easy to operate, fits in the palm of your hand." ⭐⭐⭐⭐
+</div>
+</div>
+
+</div>
+
+<!-- Exit-Intent Popup -->
+<div class="exit-popup" id="exitPopup">
+<p>Wait! Don’t leave empty-handed. Only a few lanterns left in stock!</p>
+<a href="#" onclick="window.location.href=AFFILIATE_URL">Claim Yours Now →</a>
+</div>
 
 <script>
-// Exit intent with slide-in
+// Show exit popup when mouse leaves top of page (slow trigger)
 let exitShown = false;
-document.addEventListener('mouseout', function(e){
-    if (!e.toElement && !e.relatedTarget && e.clientY < 50 && !exitShown) {
+document.addEventListener('mouseleave', function(e){
+    if(e.clientY < 50 && !exitShown){
+        document.getElementById('exitPopup').style.display = 'block';
         exitShown = true;
-        const popup = document.getElementById('exit-popup');
-        popup.style.display = 'block';
-        setTimeout(() => popup.style.bottom = '50px', 50); // slide in
-        startCountdown();
     }
 });
-
-// Countdown for urgency
-function startCountdown() {
-    let timeLeft = 10;
-    const countdownEl = document.getElementById('countdown');
-    const btn = document.getElementById('buy-now-btn');
-    const stockEl = document.getElementById('stock-count');
-    const interval = setInterval(() => {
-        if(timeLeft <= 0) {
-            clearInterval(interval);
-            countdownEl.textContent = "0";
-            stockEl.textContent = "0";
-            btn.textContent = "Sold Out!";
-            btn.disabled = true;
-        } else {
-            countdownEl.textContent = timeLeft;
-        }
-        timeLeft--;
-    }, 1000);
-}
-
-// Button click goes to affiliate link
-document.getElementById('buy-now-btn').addEventListener('click', () => {
-    window.location.href = 'https://tidd.ly/4slUGYv';
-});
 </script>
+
+</body>
+</html>
