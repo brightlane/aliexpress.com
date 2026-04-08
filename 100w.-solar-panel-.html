@@ -1,5 +1,5 @@
 <!-- FULL CONVERSION CTA SECTION -->
-<section style="background:linear-gradient(135deg,#00b894,#00a085); padding:60px 20px; border-radius:25px; text-align:center; margin:50px 0; box-shadow:0 25px 50px rgba(0,184,148,0.4);">
+<section style="background:linear-gradient(135deg,#00b894,#00a085); padding:60px 20px; border-radius:25px; text-align:center; margin:50px 0; box-shadow:0 25px 50px rgba(0,184,148,0.4); background-size:400% 400%; animation:gradientShift 15s ease infinite;">
     <h2 style="font-size:2.5em; color:white; margin-bottom:20px; text-shadow:2px 2px 10px rgba(0,0,0,0.5);">
         ⚡ Grab Your 100W Foldable Solar Panel Today!
     </h2>
@@ -8,10 +8,11 @@
     </p>
     
     <div style="margin:40px 0;">
-        <a href="https://s.click.aliexpress.com/e/_dS9uZwC" 
+        <a href="https://tidd.ly/4slUGYv" 
            class="buy-btn" 
            rel="nofollow noopener" 
            target="_blank"
+           aria-label="Buy 100W Foldable Solar Panel for $69 - Secure Checkout with Free Shipping"
            style="display:inline-block;
                   background: linear-gradient(45deg,#fff200,#ff7b00);
                   color:#2d3436;
@@ -31,12 +32,12 @@
     </div>
     
     <ul style="list-style:none; padding:0; max-width:900px; margin:0 auto; font-size:1.1em; color:white; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px;">
-        <li>✅ Folds to Backpack Size</li>
-        <li>✅ 23% High-Efficiency Solar Cells</li>
-        <li>✅ IP67 Waterproof & Dustproof</li>
-        <li>✅ Charges Jackery 300 in 4 Hours</li>
-        <li>✅ Universal MC4 + USB Ports</li>
-        <li>✅ Works -4°F to 149°F</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.1s;">✅ Folds to Backpack Size</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.2s;">✅ 23% High-Efficiency Solar Cells</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.3s;">✅ IP67 Waterproof & Dustproof</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.4s;">✅ Charges Jackery 300 in 4 Hours</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.5s;">✅ Universal MC4 + USB Ports</li>
+        <li style="opacity:0; transform:translateY(15px); animation:fadeInUp 0.6s forwards; animation-delay:0.6s;">✅ Works -4°F to 149°F</li>
     </ul>
 
     <p style="margin-top:35px; font-size:1.2em; color:#ffeaa7; font-weight:bold; text-shadow:1px 1px 5px rgba(0,0,0,0.5);">
@@ -44,10 +45,34 @@
     </p>
 </section>
 
-<!-- Hover Glow Effect -->
+<!-- Hover Glow & Animations -->
 <style>
+html { scroll-behavior: smooth; }
+
 .buy-btn:hover {
     transform: translateY(-6px) scale(1.05);
     box-shadow: 0 35px 80px rgba(255,203,0,0.8);
+}
+
+ul li {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 768px) {
+    section { padding: 40px 15px; }
+    .buy-btn { font-size: 1.8em; padding: 20px 40px; }
+    h2 { font-size: 2em; }
 }
 </style>
