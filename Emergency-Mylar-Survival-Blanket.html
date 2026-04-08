@@ -4,37 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Emergency Mylar Survival Blanket</title>
-<meta name="description" content="Lightweight, compact emergency Mylar blanket. Retains body heat, waterproof and windproof.">
-<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Compact emergency Mylar survival blanket. Ideal for camping, hiking, and emergency kits. Lightweight and heat-retaining.">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1,h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.buy-btn {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.buy-btn:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:-150px;right:20px;background:#ff4136;padding:20px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);transition:bottom 0.6s ease;z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+ul {text-align:left;max-width:600px;margin:0 auto;line-height:1.6;}
+.related-products {margin-top:50px;padding:20px;background:#002b5c;border-radius:15px;}
+</style>
 </head>
 <body>
-<div class="hero">
-  <h1>🛡️ Emergency Mylar Survival Blanket</h1>
-  <p>Compact, windproof, and waterproof. Perfect for outdoor emergencies.</p>
-  <div class="price">$7.99</div>
-</div>
+<div class="container">
+<h1>🛟 Emergency Mylar Survival Blanket</h1>
+<p>Compact, lightweight, and heat-retaining blanket — essential for camping, hiking, and emergency kits.</p>
+<a href="https://tidd.ly/4slUGYv?product=emergency-mylar-survival-blanket" target="_blank" class="buy-btn">💰 Buy Now →</a>
 
 <section class="features">
-  <h2>Features</h2>
-  <ul>
-    <li>Reflects 90% body heat</li>
-    <li>Compact & portable</li>
-    <li>Waterproof and windproof</li>
-  </ul>
+<h2>Why You’ll Love It</h2>
+<ul>
+<li>Reflects body heat to keep warm</li>
+<li>Compact and lightweight — fits in any backpack</li>
+<li>Durable and waterproof material</li>
+<li>Essential for survival kits, camping, and hiking</li>
+<li>Trusted by outdoor enthusiasts</li>
+</ul>
 </section>
+</div>
 
-<section class="cta">
-  <a href="https://tidd.ly/4slUGYv?product=mylar-survival-blanket" target="_blank" rel="nofollow noopener" class="buy-btn">
-    💰 Buy Now
-  </a>
-</section>
+<div id="exitPopup" class="popup">
+<strong>Wait!</strong><br>
+Don’t leave without your survival blanket — limited stock.<br><br>
+<button onclick="goAff()">Get it Now →</button>
+</div>
 
-<section class="next-product">
-  <a href="LifeStream-Portable-Water-Filter.html" class="next-btn">➤ Next: LifeStream Portable Water Filter</a>
-</section>
+<div class="related-products">
+<h2 style="color:#ffd700;">🔥 People Also Viewed</h2>
+<div id="relatedProducts" style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-top:20px;"></div>
+</div>
 
-<footer>
-  <p>© 2026 YourBrand | Free Shipping • 30-Day Guarantee</p>
-</footer>
+<script>
+let shown=false;
+document.addEventListener('mouseleave', function(e){
+if(e.clientY < 10 && !shown){shown=true;setTimeout(()=>{document.getElementById('exitPopup').style.bottom='20px';},1200);setAffiliateCookie();}});
+
+function setAffiliateCookie(){
+const d=new Date();
+d.setTime(d.getTime() + (30*24*60*60*1000));
+document.cookie = "aff=1;expires=" + d.toUTCString() + ";path=/";
+}
+
+function goAff(){setAffiliateCookie();window.open("https://tidd.ly/4slUGYv?product=emergency-mylar-survival-blanket","_blank");}
+
+const products = [
+{"name":"1000 Lumen Lantern","url":"/aliexpress.com/1000lumen-led-lantern.html"},
+{"name":"100W Solar Panel","url":"/aliexpress.com/100w.-solar-panel-.html"},
+{"name":"120dB Survival Whistle","url":"/aliexpress.com/120db-survival-whistle.html"},
+{"name":"201 Water Bladder","url":"/aliexpress.com/201-water-bladder.html"},
+{"name":"5501 Paranoid Bracelet","url":"/aliexpress.com/5501-paranoid-bracelet.html"}
+];
+
+const currentPage = window.location.pathname;
+const filtered = products.filter(p => !currentPage.includes(p.url));
+function shuffle(array){return array.sort(()=>0.5 - Math.random());}
+const selected = shuffle(filtered).slice(0,4);
+
+const container = document.getElementById("relatedProducts");
+selected.forEach(p=>{
+const div=document.createElement("div");
+div.style=`background:#001f3f;padding:15px;border-radius:10px;width:200px;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.5);transition:transform 0.2s;`;
+div.onmouseover=()=>div.style.transform="translateY(-5px)";
+div.onmouseout=()=>div.style.transform="translateY(0)";
+div.innerHTML=`<div style="color:#ffd700;font-weight:bold;margin-bottom:10px;">${p.name}</div>
+<div style="font-size:13px;color:#ccc;">View Product →</div>`;
+div.onclick=()=>window.location.href=p.url;
+});
+</script>
 </body>
 </html>
