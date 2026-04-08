@@ -3,26 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mylar Survival Blanket</title>
-<meta name="description" content="Emergency Mylar Survival Blanket $12.99 - Lightweight, compact, and essential for camping or survival situations.">
-<meta name="keywords" content="mylar blanket, survival blanket, emergency blanket, camping gear">
-
-<style>/* same styles as previous pages */</style>
+<title>Mylar Survival Blanket – Emergency Gear</title>
+<meta name="description" content="Compact and reflective Mylar survival blanket. Ideal for camping, hiking, and emergency situations.">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-image {max-width:400px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.product-image img {width:100%;height:auto;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+.related-products {margin-top:40px;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;}
+.related-products h2 {text-align:center;color:#ffd700;}
+.related-products ul {list-style:none;padding:0;line-height:1.8;}
+.related-products li a {color:#ff851b;text-decoration:none;}
+.related-products li a:hover {text-decoration:underline;}
+</style>
 </head>
 <body>
 <div class="container">
+  <h1>Mylar Survival Blanket</h1>
+  <p>Ultra-compact, reflective, and lifesaving emergency blanket for any situation.</p>
+  
+  <a href="https://tidd.ly/4slUGYv?product=mylar-blanket" target="_blank" class="product-image">
+    <img src="https://example.com/mylar-blanket.jpg" alt="Mylar Survival Blanket">
+  </a>
+  
+  <div>
+    <a href="https://tidd.ly/4slUGYv?product=mylar-blanket" target="_blank" class="button">Shop Now →</a>
+  </div>
+  
+  <h2>Why You’ll Need It</h2>
+  <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:1.6;">
+    <li>🌟 Reflective material retains body heat</li>
+    <li>👜 Compact for backpacks or emergency kits</li>
+    <li>💪 Durable and tear-resistant</li>
+    <li>🏕️ Perfect for camping, hiking, or survival scenarios</li>
+  </ul>
 
-<section class="hero">
-  <h1>🛶 Mylar Survival Blanket</h1>
-  <p>Lightweight, compact, and essential for emergencies, camping, or survival situations. Keeps you warm in any condition.</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">🛶 Buy Now $12.99</a>
-</section>
-
-<div class="nav-links">
-  <a href="mllse-mini-pc.html">← Previous</a>
-  <a href="nanomist-gun.html">Next →</a>
+  <div class="related-products">
+    <h2>Other Popular Products</h2>
+    <ul>
+      <li><a href="nasa-mylar-blanket.html">NASA Mylar Blanket</a></li>
+      <li><a href="ferro-rod-firestarter.html">Ferro Rod Firestarter</a></li>
+      <li><a href="flexrelief-fascia-ring.html">FlexRelief Fascia Ring</a></li>
+      <li><a href="mini-multitool.html">Mini Multitool</a></li>
+      <li><a href="mllse-mini-pc.html">MLLSE Mini PC</a></li>
+    </ul>
+  </div>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without grabbing the Mylar Survival Blanket – limited stock!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv?product=mylar-blanket','_blank');setCookie('aff','https://tidd.ly/4slUGYv?product=mylar-blanket',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => { document.getElementById('exitPopup').style.display='block'; }, 1500);
+  }
+});
+
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
