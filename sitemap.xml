@@ -1,144 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brightlane Sitemap</title>
-<style>
-  :root {
-    --primary: #0645ad;
-    --bg: #f4f6f8;
-    --card: #ffffff;
-    --text: #222;
-    --muted: #666;
-  }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: var(--bg);
-    margin: 0;
-    color: var(--text);
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-    background: white;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    z-index: 100;
-    text-align: center;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 26px;
-  }
-
-  .container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 10px;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-
-  .url-list {
-    display: grid;
-    gap: 15px;
-  }
-
-  .url-item {
-    background: var(--card);
-    padding: 15px 18px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .url-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  }
-
-  a {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 500;
-    word-break: break-word;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .meta {
-    margin-top: 6px;
-    font-size: 14px;
-    color: var(--muted);
-  }
-
-  @media (max-width: 600px) {
-    h1 { font-size: 22px; }
-    .url-item { padding: 12px; }
-  }
-</style>
-</head>
-<body>
-
-<header>
-  <h1>Brightlane Sitemap</h1>
-</header>
-
-<main class="container">
-  <input type="text" id="search" placeholder="Search URLs...">
-  <div class="url-list"></div>
-</main>
-
-<script>
-  const urls = [
-    { url: "https://brightlane.github.io/aliexpress.com/", priority: 1.0 },
-    { url: "https://brightlane.github.io/aliexpress.com/1000lumen-led-lantern.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/100w.-solar-panel-.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/120db-survival-whistle.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/201-water-bladder.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/5501-paranoid-bracelet.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/Emergency-Mylar-Survival-Blanket.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/LifeStream-Portable-Water-Filter.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/MagSafeHub.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/Portable-Power-Banks.html", priority: 0.9 },
-    { url: "https://brightlane.github.io/aliexpress.com/StormReadyHub.html", priority: 0.9 }
-    // Add the rest of your URLs here
-  ];
-
-  const container = document.querySelector(".url-list");
-  const searchInput = document.getElementById("search");
-
-  function renderList(filter = "") {
-    container.innerHTML = "";
-    const filtered = urls.filter(item => item.url.toLowerCase().includes(filter.toLowerCase()));
-    filtered.forEach(item => {
-      const div = document.createElement("div");
-      div.className = "url-item";
-      div.innerHTML = `<a href="${item.url}" target="_blank">${item.url}</a>
-                       <div class="meta">Priority: ${item.priority}</div>`;
-      container.appendChild(div);
-    });
-  }
-
-  searchInput.addEventListener("input", () => renderList(searchInput.value));
-
-  // Initial render
-  renderList();
-</script>
-
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://brightlane.github.io/aliexpress.com/1000lumen-led-lantern.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/100w.-solar-panel-.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/120db-survival-whistle.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/201-water-bladder.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/5501-paranoid-bracelet.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/Emergency-Mylar-Survival-Blanket.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/LifeStream-Portable-Water-Filter.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/MagSafeHub.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/Portable-Power-Banks.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/StormReadyHub.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/aliexpress-shop.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/anker-powerhouse-521.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/aquacurve-irrigation.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/cat-nail-scratch-board-.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/chargingstation.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/chuwi-corebook-x.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/electrick-bike.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/elite-72hr-survival-kit.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergency-cooking-stove.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergency-hot-tub.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergency-lantern.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergency-light.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergency-water-generator.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/emergencyfoodkit.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/ferro-rod-firestarter.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/flexrelief-fascia-ring.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/gan.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/god-pocket-laptop.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/hermes-picotin-lock.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/jackery-explorer-300.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/jerry-can-lifesaver.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/kindlebooks.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/lifestraw-water-filter.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/loropiana-shyanne-dress.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/lv-neverfull-mm.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/magasafe.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/massage-chair.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/mini-multitool.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/mllse-mini-pc.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/mylar-blanket.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/nanomist-gun.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/nasa-mylar-blanket.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/patek-nautilus--5711.htmll</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/poco-f7-phone.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/posturepro-corrector.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/powerbank-30000mah.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/ptz-security-camera.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/rolex-daytona-panda.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/sany-sy215-excavator.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/sargeant-power-bank.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/satellite-phone.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/shop.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/signal-mirror.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/solar-generator-kit.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/survival-kit.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/survival-seed-bank.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/tank-4-pro-phone.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/titanium-cookware.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/weather-radio-4000mah.html</loc></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/wireless-dog-fence.html</loc></url>
+</urlset>
