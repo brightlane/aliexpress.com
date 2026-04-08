@@ -2,38 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Brightlane Sitemap</title>
+<title>Brightlane Sitemap Full View</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    line-height: 1.8;
-    font-size: 18px;
-    margin: 30px;
     background-color: #f9f9f9;
+    margin: 20px;
+    line-height: 2;
+    font-size: 18px;
   }
   h1 {
     font-size: 28px;
     margin-bottom: 20px;
   }
-  h2 {
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
   a {
-    text-decoration: none;
     color: #0645ad;
+    text-decoration: none;
+    word-break: break-all;
   }
   a:hover {
     text-decoration: underline;
+  }
+  .url-item {
+    margin-bottom: 20px; /* Extra space between each URL */
   }
   .priority {
     color: #555;
     font-size: 16px;
     margin-left: 10px;
-  }
-  .url-item {
-    margin-bottom: 12px;
   }
 </style>
 </head>
@@ -41,31 +37,41 @@
 
 <h1>Brightlane GitHub Sitemap</h1>
 
-<h2>Main Page</h2>
-<div class="url-item">
-  <a href="https://brightlane.github.io/aliexpress.com/" target="_blank">Home</a>
-  <span class="priority">Priority: 1.0</span>
-</div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/" target="_blank">https://brightlane.github.io/aliexpress.com/</a> <span class="priority">Priority: 1.0</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/1000lumen-led-lantern.html" target="_blank">https://brightlane.github.io/aliexpress.com/1000lumen-led-lantern.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/100w.-solar-panel-.html" target="_blank">https://brightlane.github.io/aliexpress.com/100w.-solar-panel-.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/120db-survival-whistle.html" target="_blank">https://brightlane.github.io/aliexpress.com/120db-survival-whistle.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/201-water-bladder.html" target="_blank">https://brightlane.github.io/aliexpress.com/201-water-bladder.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/5501-paranoid-bracelet.html" target="_blank">https://brightlane.github.io/aliexpress.com/5501-paranoid-bracelet.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/Emergency-Mylar-Survival-Blanket.html" target="_blank">https://brightlane.github.io/aliexpress.com/Emergency-Mylar-Survival-Blanket.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/LifeStream-Portable-Water-Filter.html" target="_blank">https://brightlane.github.io/aliexpress.com/LifeStream-Portable-Water-Filter.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/MagSafeHub.html" target="_blank">https://brightlane.github.io/aliexpress.com/MagSafeHub.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/Portable-Power-Banks.html" target="_blank">https://brightlane.github.io/aliexpress.com/Portable-Power-Banks.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/StormReadyHub.html" target="_blank">https://brightlane.github.io/aliexpress.com/StormReadyHub.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/aliexpress-shop.html" target="_blank">https://brightlane.github.io/aliexpress.com/aliexpress-shop.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/anker-powerhouse-521.html" target="_blank">https://brightlane.github.io/aliexpress.com/anker-powerhouse-521.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/aquacurve-irrigation.html" target="_blank">https://brightlane.github.io/aliexpress.com/aquacurve-irrigation.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/cat-nail-scratch-board-.html" target="_blank">https://brightlane.github.io/aliexpress.com/cat-nail-scratch-board-.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/chargingstation.html" target="_blank">https://brightlane.github.io/aliexpress.com/chargingstation.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/chuwi-corebook-x.html" target="_blank">https://brightlane.github.io/aliexpress.com/chuwi-corebook-x.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/electrick-bike.html" target="_blank">https://brightlane.github.io/aliexpress.com/electrick-bike.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/elite-72hr-survival-kit.html" target="_blank">https://brightlane.github.io/aliexpress.com/elite-72hr-survival-kit.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergency-cooking-stove.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergency-cooking-stove.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergency-hot-tub.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergency-hot-tub.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergency-lantern.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergency-lantern.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergency-light.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergency-light.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergency-water-generator.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergency-water-generator.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/emergencyfoodkit.html" target="_blank">https://brightlane.github.io/aliexpress.com/emergencyfoodkit.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/ferro-rod-firestarter.html" target="_blank">https://brightlane.github.io/aliexpress.com/ferro-rod-firestarter.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/flexrelief-fascia-ring.html" target="_blank">https://brightlane.github.io/aliexpress.com/flexrelief-fascia-ring.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/gan.index.html" target="_blank">https://brightlane.github.io/aliexpress.com/gan.index.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/god-pocket-laptop.html" target="_blank">https://brightlane.github.io/aliexpress.com/god-pocket-laptop.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/hermes-picotin-lock.html" target="_blank">https://brightlane.github.io/aliexpress.com/hermes-picotin-lock.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/index.html" target="_blank">https://brightlane.github.io/aliexpress.com/index.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/jackery-explorer-300.html" target="_blank">https://brightlane.github.io/aliexpress.com/jackery-explorer-300.html</a> <span class="priority">Priority: 0.9</span></div>
+<div class="url-item"><a href="https://brightlane.github.io/aliexpress.com/jerry-can-lifesaver.html" target="_blank">https://brightlane.github.io/aliexpress.com/jerry-can-lifesaver.html</a> <span class="priority">Priority: 0.9</span></div>
 
-<h2>Products & Pages (Priority: 0.9)</h2>
-<div class="url-item">
-  <a href="https://brightlane.github.io/aliexpress.com/1000lumen-led-lantern.html" target="_blank">1000 Lumen LED Lantern</a>
-  <span class="priority">Priority: 0.9</span>
-</div>
-<div class="url-item">
-  <a href="https://brightlane.github.io/aliexpress.com/100w.-solar-panel-.html" target="_blank">100W Solar Panel</a>
-  <span class="priority">Priority: 0.9</span>
-</div>
-<div class="url-item">
-  <a href="https://brightlane.github.io/aliexpress.com/120db-survival-whistle.html" target="_blank">120dB Survival Whistle</a>
-  <span class="priority">Priority: 0.9</span>
-</div>
-<div class="url-item">
-  <a href="https://brightlane.github.io/aliexpress.com/201-water-bladder.html" target="_blank">2L Water Bladder</a>
-  <span class="priority">Priority: 0.9</span>
-</div>
-
-<!-- Continue with all other URLs in the same format -->
+<!-- Continue all remaining URLs in same format -->
 
 </body>
 </html>
