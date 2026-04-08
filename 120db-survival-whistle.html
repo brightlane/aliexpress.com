@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>120dB Survival Whistle - Essential Emergency Gear</title>
-<meta name="description" content="High-decibel survival whistle. Perfect for emergencies, hiking, camping, and outdoor safety.">
+<title>120dB Survival Whistle - Emergency Gear</title>
+<meta name="description" content="High-decibel 120dB survival whistle. Essential for camping, hiking, and emergency kits.">
 <style>
 body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
 .container {max-width:900px;margin:0 auto;padding:20px;}
@@ -13,99 +13,75 @@ a {text-decoration:none;color:white;}
 a:hover {opacity:0.85;}
 .buy-btn {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
 .buy-btn:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
-ul {text-align:left;max-width:600px;margin:0 auto;line-height:1.6;}
-.next-btn {display:inline-block;margin-top:30px;color:#ffd700;font-weight:bold;}
 .popup {display:none;position:fixed;bottom:-150px;right:20px;background:#ff4136;padding:20px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);transition:bottom 0.6s ease;z-index:999;}
 .popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+ul {text-align:left;max-width:600px;margin:0 auto;line-height:1.6;}
 .related-products {margin-top:50px;padding:20px;background:#002b5c;border-radius:15px;}
 </style>
 </head>
 <body>
-
 <div class="container">
-  <h1>📢 120dB Survival Whistle</h1>
-  <p>Powerful, lightweight whistle for emergencies, hiking, camping, and outdoor safety.</p>
-  <div class="price">$12.99</div>
-
-  <a href="https://tidd.ly/4slUGYv?product=120db-survival-whistle" target="_blank" class="buy-btn">💰 Buy Now →</a>
-
-  <section class="features">
-    <h2>Why You’ll Love It</h2>
-    <ul>
-      <li>Extremely loud 120dB signal</li>
-      <li>Lightweight and compact</li>
-      <li>Essential for hiking, camping, and emergency kits</li>
-      <li>Durable and waterproof design</li>
-    </ul>
-  </section>
+<h1>📢 120dB Survival Whistle</h1>
+<p>High-decibel, compact whistle. Essential safety tool for emergencies and outdoor adventures.</p>
+<a href="https://tidd.ly/4slUGYv?product=120db-survival-whistle" target="_blank" class="buy-btn">💰 Buy Now →</a>
+<section class="features">
+<h2>Why You’ll Love It</h2>
+<ul>
+<li>Extremely loud 120dB sound</li>
+<li>Compact and lightweight</li>
+<li>Durable and weather-resistant</li>
+<li>Works in emergencies, camping, and hiking</li>
+<li>Essential survival gear for outdoor safety</li>
+</ul>
+</section>
 </div>
 
-<!-- Exit popup -->
 <div id="exitPopup" class="popup">
-  <strong>Wait!</strong><br>
-  Don’t leave without your survival whistle — limited stock.<br><br>
-  <button onclick="goAff()">Get it Now →</button>
+<strong>Wait!</strong><br>
+Don’t leave without your survival whistle — limited stock.<br><br>
+<button onclick="goAff()">Get it Now →</button>
 </div>
 
-<!-- Related products -->
 <div class="related-products">
-  <h2 style="color:#ffd700;">🔥 People Also Viewed</h2>
-  <div id="relatedProducts" style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-top:20px;"></div>
+<h2 style="color:#ffd700;">🔥 People Also Viewed</h2>
+<div id="relatedProducts" style="display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-top:20px;"></div>
 </div>
 
 <script>
-// Exit-intent popup
 let shown=false;
 document.addEventListener('mouseleave', function(e){
-  if(e.clientY < 10 && !shown){
-    shown=true;
-    setTimeout(()=>{document.getElementById('exitPopup').style.bottom='20px';},1200);
-    setAffiliateCookie();
-  }
-});
+if(e.clientY < 10 && !shown){shown=true;setTimeout(()=>{document.getElementById('exitPopup').style.bottom='20px';},1200);setAffiliateCookie();}});
 
-// Cookie function
 function setAffiliateCookie(){
-  const d=new Date();
-  d.setTime(d.getTime() + (30*24*60*60*1000));
-  document.cookie = "aff=1;expires=" + d.toUTCString() + ";path=/";
+const d=new Date();
+d.setTime(d.getTime() + (30*24*60*60*1000));
+document.cookie = "aff=1;expires=" + d.toUTCString() + ";path=/";
 }
 
-function goAff(){
-  setAffiliateCookie();
-  window.open("https://tidd.ly/4slUGYv?product=120db-survival-whistle","_blank");
-}
+function goAff(){setAffiliateCookie();window.open("https://tidd.ly/4slUGYv?product=120db-survival-whistle","_blank");}
 
-// Related products
 const products = [
-  {"name":"1000 Lumen Lantern","url":"/aliexpress.com/1000lumen-led-lantern.html"},
-  {"name":"100W Solar Panel","url":"/aliexpress.com/100w.-solar-panel-.html"},
-  {"name":"Emergency Lantern","url":"/aliexpress.com/emergency-lantern.html"},
-  {"name":"Portable Power Banks","url":"/aliexpress.com/Portable-Power-Banks.html"},
-  {"name":"72hr Survival Kit","url":"/aliexpress.com/elite-72hr-survival-kit.html"},
-  {"name":"Water Filter","url":"/aliexpress.com/LifeStream-Portable-Water-Filter.html"},
-  {"name":"Firestarter Kit","url":"/aliexpress.com/ferro-rod-firestarter.html"},
-  {"name":"Solar Charging Station","url":"/aliexpress.com/chargingstation.html"},
-  {"name":"Emergency Food Kit","url":"/aliexpress.com/emergencyfoodkit.html"},
-  {"name":"Portable Stove","url":"/aliexpress.com/emergency-cooking-stove.html"}
+{"name":"1000 Lumen Lantern","url":"/aliexpress.com/1000lumen-led-lantern.html"},
+{"name":"100W Solar Panel","url":"/aliexpress.com/100w.-solar-panel-.html"},
+{"name":"Emergency Lantern","url":"/aliexpress.com/emergency-lantern.html"},
+{"name":"Portable Power Banks","url":"/aliexpress.com/Portable-Power-Banks.html"}
 ];
 
 const currentPage = window.location.pathname;
 const filtered = products.filter(p => !currentPage.includes(p.url));
-function shuffle(array){ return array.sort(()=>0.5 - Math.random()); }
+function shuffle(array){return array.sort(()=>0.5 - Math.random());}
 const selected = shuffle(filtered).slice(0,4);
 
 const container = document.getElementById("relatedProducts");
 selected.forEach(p=>{
-  const div=document.createElement("div");
-  div.style=`background:#001f3f;padding:15px;border-radius:10px;width:200px;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.5);transition:transform 0.2s;`;
-  div.onmouseover=()=>div.style.transform="translateY(-5px)";
-  div.onmouseout=()=>div.style.transform="translateY(0)";
-  div.innerHTML=`<div style="color:#ffd700;font-weight:bold;margin-bottom:10px;">${p.name}</div>
-  <div style="font-size:13px;color:#ccc;">View Product →</div>`;
-  div.onclick=()=>window.location.href=p.url;
+const div=document.createElement("div");
+div.style=`background:#001f3f;padding:15px;border-radius:10px;width:200px;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.5);transition:transform 0.2s;`;
+div.onmouseover=()=>div.style.transform="translateY(-5px)";
+div.onmouseout=()=>div.style.transform="translateY(0)";
+div.innerHTML=`<div style="color:#ffd700;font-weight:bold;margin-bottom:10px;">${p.name}</div>
+<div style="font-size:13px;color:#ccc;">View Product →</div>`;
+div.onclick=()=>window.location.href=p.url;
 });
 </script>
-
 </body>
 </html>
