@@ -3,26 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jackery Explorer 300</title>
-<meta name="description" content="Jackery Explorer 300 $299 - Portable power station, perfect for camping, emergencies, and outdoor adventures.">
-<meta name="keywords" content="Jackery Explorer 300, portable power station, camping power, emergency power">
-
-<style>/* same styles as previous pages */</style>
+<title>Jackery Explorer 300 – Portable Power Station</title>
+<meta name="description" content="Jackery Explorer 300 portable power station. Reliable backup power for camping, emergencies, or off-grid adventures.">
+<style>
+body {background:#001f3f;color:white;font-family:system-ui,sans-serif;margin:0;padding:0;text-align:center;}
+.container {max-width:900px;margin:0 auto;padding:20px;}
+h1, h2 {color:#ffd700;}
+a {text-decoration:none;color:white;}
+a:hover {opacity:0.85;}
+.product-image {max-width:400px;margin:20px auto;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);}
+.product-image img {width:100%;height:auto;}
+.button {display:inline-block;margin:15px 0;padding:15px 30px;font-size:22px;font-weight:700;background:#ff851b;border-radius:10px;box-shadow:0 5px 20px rgba(255,133,27,0.5);}
+.button:hover {transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,133,27,0.6);}
+.popup {display:none;position:fixed;bottom:20px;right:20px;background:#ff4136;padding:20px 30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.5);z-index:999;}
+.popup button {margin-left:20px;padding:10px 20px;font-weight:700;background:#001f3f;color:white;border:none;border-radius:5px;cursor:pointer;}
+.related-products {margin-top:40px;text-align:left;max-width:800px;margin-left:auto;margin-right:auto;}
+.related-products h2 {text-align:center;color:#ffd700;}
+.related-products ul {list-style:none;padding:0;line-height:1.8;}
+.related-products li a {color:#ff851b;text-decoration:none;}
+.related-products li a:hover {text-decoration:underline;}
+</style>
 </head>
 <body>
 <div class="container">
+  <h1>Jackery Explorer 300</h1>
+  <p>Portable, reliable power station for camping, emergencies, or off-grid use.</p>
+  
+  <a href="https://tidd.ly/4slUGYv?product=jackery-explorer-300" target="_blank" class="product-image">
+    <img src="https://ae01.alicdn.com/kf/3256805826765601/Jackery-Explorer-300.jpg" alt="Jackery Explorer 300">
+  </a>
+  
+  <div>
+    <a href="https://tidd.ly/4slUGYv?product=jackery-explorer-300" target="_blank" class="button">Get Yours Now →</a>
+  </div>
+  
+  <h2>Why You’ll Love It</h2>
+  <ul style="text-align:left;max-width:600px;margin:0 auto;line-height:1.6;">
+    <li>🔋 293Wh battery capacity for multiple device charges</li>
+    <li>⚡ Multiple outputs: AC, USB-C, DC</li>
+    <li>🏕️ Lightweight and portable</li>
+    <li>💯 Highly rated by outdoor enthusiasts</li>
+  </ul>
 
-<section class="hero">
-  <h1>🔋 Jackery Explorer 300</h1>
-  <p>Portable power station perfect for camping, emergencies, and outdoor adventures. Reliable and compact.</p>
-  <a href="https://tidd.ly/4slUGYv" target="_blank" rel="nofollow" class="cta-btn">🔋 Buy Now $299</a>
-</section>
-
-<div class="nav-links">
-  <a href="index.html">← Previous</a>
-  <a href="jerry-can-lifesaver.html">Next →</a>
+  <div class="related-products">
+    <h2>Other Popular Products</h2>
+    <ul>
+      <li><a href="1000lumen-led-lantern.html">1000 Lumen LED Lantern</a></li>
+      <li><a href="100w.-solar-panel-.html">100W Solar Panel</a></li>
+      <li><a href="120db-survival-whistle.html">120dB Survival Whistle</a></li>
+      <li><a href="201-water-bladder.html">201 Water Bladder</a></li>
+      <li><a href="5501-paranoid-bracelet.html">5501 Paranoid Bracelet</a></li>
+    </ul>
+  </div>
 </div>
 
+<div class="popup" id="exitPopup">
+  <span>Wait! Don’t leave without securing your portable power!</span>
+  <button onclick="window.open('https://tidd.ly/4slUGYv?product=jackery-explorer-300','_blank');setCookie('aff','https://tidd.ly/4slUGYv?product=jackery-explorer-300',30);this.parentElement.style.display='none';">Get It Now</button>
 </div>
+
+<script>
+// Exit-intent popup (slow moving)
+let exitShown = false;
+document.addEventListener('mouseleave', function(e){
+  if(e.clientY < 10 && !exitShown){
+    exitShown = true;
+    setTimeout(() => {
+      document.getElementById('exitPopup').style.display='block';
+    }, 1500); // 1.5s delay
+  }
+});
+
+// Cookie function
+function setCookie(name,value,days){
+  const d = new Date();
+  d.setTime(d.getTime()+(days*24*60*60*1000));
+  document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+}
+</script>
 </body>
 </html>
