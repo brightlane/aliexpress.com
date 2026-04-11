@@ -3,53 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Product Audit Directory | SoftLife Travel Network</title>
+    <title>Master Audit Directory | SoftLife Travel Network</title>
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; max-width: 1000px; margin: 40px auto; padding: 20px; color: #333; background: #fff; }
-        h1 { border-bottom: 3px solid #ff4757; padding-bottom: 15px; color: #2f3542; }
-        .info-box { background: #f1f2f6; padding: 15px; border-radius: 8px; margin-bottom: 30px; font-size: 0.9rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 20px; color: #333; background: #fff; }
+        h1 { border-bottom: 3px solid #ff4757; padding-bottom: 10px; color: #2f3542; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin-top: 30px; }
         .audit-link { 
-            display: block; 
-            padding: 12px; 
-            background: #f9f9f9; 
-            border: 1px solid #eee; 
-            border-radius: 6px; 
-            text-decoration: none; 
-            color: #1e90ff; 
-            font-weight: 500;
-            transition: all 0.2s;
+            display: block; padding: 15px; background: #f8f9fa; border: 1px solid #dee2e6; 
+            border-radius: 8px; text-decoration: none; color: #007bff; font-weight: bold; text-align: center;
         }
-        .audit-link:hover { 
-            background: #1e90ff; 
-            color: white; 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        footer { margin-top: 50px; text-align: center; color: #a4b0be; font-size: 0.8rem; }
+        .audit-link:hover { background: #e2e6ea; color: #0056b3; border-color: #adb5bd; }
+        footer { margin-top: 50px; text-align: center; color: #6c757d; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <h1>2026 Technical Audit Directory</h1>
+    <h1>Product Audit Directory</h1>
+    <p>Select a verified technical report from the SoftLife network below:</p>
     
-    <div class="info-box">
-        <strong>Search Engine Note:</strong> This directory contains verified technical reliability reports for the SoftLife Travel Network. All audits are updated daily based on hardware performance benchmarks.
-    </div>
-
     <div id="master-grid" class="grid">
         </div>
 
     <footer>
-        © 2026 SoftLife Travel Network | <a href="index.html" style="color: #a4b0be;">Return to Home</a>
+        <p>© 2026 SoftLife Travel Network | <a href="index.html">Home</a></p>
     </footer>
 
     <script>
-        /**
-         * IMPORTANT: These slugs must match the names inside your 
-         * portalDatabase in index.html exactly.
-         */
-        const productSlugs = [
+        // MUST match the keys in your index.html portalDatabase exactly
+        const slugs = [
             "100w-solar-panel",
             "poco-f7-phone",
             "tessan-65w",
@@ -57,28 +38,22 @@
             "plasma-arc-lighter-pro",
             "bone-conduction-swim",
             "ai-smart-desk-lamp",
-            "emergency-water-filter",
-            "titanium-camp-stove",
-            "gan-v-travel-hub"
-            // You can paste your other 490 slugs here inside the brackets
+            "emergency-water-filter"
         ];
 
-        const grid = document.getElementById('master-grid');
-
-        productSlugs.forEach(slug => {
-            const link = document.createElement('a');
+        const container = document.getElementById('master-grid');
+        
+        slugs.forEach(slug => {
+            const a = document.createElement('a');
+            // We use './' to ensure it stays in the same folder
+            a.href = `./index.html?item=${slug}`;
+            a.className = 'audit-link';
             
-            // THE TRICK: Points to index.html with the ?item= parameter
-            link.href = `index.html?item=${slug}`;
-            link.className = 'audit-link';
+            // Format the text nicely
+            const label = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            a.innerText = "🔍 " + label;
             
-            // This turns "poco-f7-phone" into "Poco F7 Phone Audit" for the user
-            const cleanName = slug.split('-')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ') + ' Audit';
-            
-            link.innerText = "✓ " + cleanName;
-            grid.appendChild(link);
+            container.appendChild(a);
         });
     </script>
 </body>
