@@ -1,0 +1,28 @@
+// Example CSV Data (Paste your 500 rows here)
+const csvData = `
+slug,title,specs,insight,social,link
+tessan-65w,TESSAN 65W GaN Charger,65W USB-C PD,Our 2026 audit confirms 15% cooler operation.,4.9/5 stars - Best for travelers.,https://awin1.com/...
+insta-x5,Insta360 X5 8K Review,8K 360 Video,Lossless 1080p crops for social media.,Voted #1 Narrative Tool.,https://awin1.com/...
+`;
+
+function csvToJSON(csv) {
+    const lines = csv.trim().split('\n');
+    const headers = lines[0].split(',');
+    const result = {};
+
+    for (let i = 1; i < lines.length; i++) {
+        const currentLine = lines[i].split(',');
+        const slug = currentLine[0]; // The URL ID (?item=slug)
+        
+        result[slug] = {
+            title: currentLine[1],
+            specs: currentLine[2],
+            insight: currentLine[3],
+            social: currentLine[4],
+            affiliate_url: currentLine[5]
+        };
+    }
+    return JSON.stringify(result, null, 2);
+}
+
+console.log(csvToJSON(csvData));
