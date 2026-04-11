@@ -4,55 +4,35 @@
   <url>
     <loc>https://brightlane.github.io/aliexpress.com/index.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://brightlane.github.io/aliexpress.com/directory.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://brightlane.github.io/aliexpress.com/blog.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=poco-f7-phone</loc><lastmod>2026-04-10</lastmod></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=100w-solar-panel</loc><lastmod>2026-04-10</lastmod></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=tessan-65w</loc><lastmod>2026-04-10</lastmod></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=magsafehub</loc><lastmod>2026-04-10</lastmod></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=tank-4-pro-phone</loc><lastmod>2026-04-10</lastmod></url>
+  <url><loc>https://brightlane.github.io/aliexpress.com/index.html?item=1000lumen-led-lantern</loc><lastmod>2026-04-10</lastmod></url>
 
   <url>
-    <loc>https://brightlane.github.io/aliexpress.com/index.html?item=poco-f7-phone</loc>
+    <loc>https://brightlane.github.io/aliexpress.com/survival-kit.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://brightlane.github.io/aliexpress.com/index.html?item=100w-solar-panel</loc>
+    <loc>https://brightlane.github.io/aliexpress.com/emergency-mylar-survival-blanket.html</loc>
     <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://brightlane.github.io/aliexpress.com/index.html?item=tessan-65w</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://brightlane.github.io/aliexpress.com/index.html?item=magsafehub</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://brightlane.github.io/aliexpress.com/index.html?item=tank-4-pro-phone</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  </urlset>
+</urlset>
